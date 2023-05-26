@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar-menu li {
+    margin: 0 10px;
+  }
+
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Futura", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .navbar-menu li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ff0000; /* Replace with your preferred neon color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-menu li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+
+#Background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%; 
+    min-height: 100%;
+    
+  }
