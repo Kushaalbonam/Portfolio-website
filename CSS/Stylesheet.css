@@ -59,6 +59,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+    filter: blur(3px);
     min-width: 100%; 
     min-height: 100%;
     
